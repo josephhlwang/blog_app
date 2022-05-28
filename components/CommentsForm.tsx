@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 
+import { submitComment } from '../services'
+
 const CommentsForm = (slug: any) => {
   const [error, setError] = useState(false)
   const [showSuccessMessage, setShowSuccessMessage] = useState(false)
@@ -13,12 +15,19 @@ const CommentsForm = (slug: any) => {
     const { value: comment } = commentEl.current
     const { value: email } = emailEl.current
 
-    if (!name || !comment || email) {
+    if (!name || !comment || !email) {
       setError(true)
       return
     }
 
     const commentObj = { name, email, comment, slug }
+
+    submitComment(commentObj).then((res) => {
+      setShowSuccessMessage(true)
+      setTimeout(() => {
+        setShowSuccessMessage(false)
+      }, 3000)
+    })
   }
 
   return (
