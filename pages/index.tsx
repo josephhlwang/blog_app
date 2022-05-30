@@ -4,7 +4,12 @@ import Image from 'next/image'
 
 import { getPosts } from '../services'
 
-import { PostCard, Categories, PostWidget } from '../components'
+import {
+  PostCard,
+  Categories,
+  PostWidget,
+  FeaturedPostCarousel,
+} from '../components'
 
 const Home: NextPage = ({ posts }: any) => {
   return (
@@ -13,6 +18,7 @@ const Home: NextPage = ({ posts }: any) => {
         <title>Joseph's Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <FeaturedPostCarousel />
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
         <div className="col-span-1 lg:col-span-8">
           {posts.map((post: any) => (
