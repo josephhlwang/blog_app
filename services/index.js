@@ -38,6 +38,42 @@ export const getPosts = async () => {
   return results.postsConnection.edges
 }
 
+export const getFeaturedPosts = async () => {
+  const query = gql`
+    query getFeaturedPosts() {
+      postsConnection(where: { featuredPost:true }) {
+        edges {
+          node {
+            author {
+              bio
+              name
+              id
+              photo {
+                url
+              }
+            }
+            createdAt
+            slug
+            title
+            excerpt
+            featuredImage {
+              url
+            }
+            categories {
+              name
+              slug
+            }
+          }
+        }
+      }
+    }
+  `
+
+  const results = await request(graphqlAPI, query)
+
+  return results.postsConnection.edges
+}
+
 export const getRecentPosts = async () => {
   const query = gql`
     query getRecentPosts() {
