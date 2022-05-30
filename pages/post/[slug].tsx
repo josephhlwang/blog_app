@@ -7,6 +7,7 @@ import {
   Author,
   Comments,
   CommentsForm,
+  AdjacentPosts,
 } from '../../components'
 
 const PostDetails = ({ post }: any) => {
@@ -16,6 +17,7 @@ const PostDetails = ({ post }: any) => {
         <div className="col-span-1 lg:col-span-8">
           <PostDetail post={post} />
           <Author author={post.author} />
+          <AdjacentPosts slug={post.slug} createdAt={post.createdAt} />
           <CommentsForm slug={post.slug} />
           <Comments slug={post.slug} />
         </div>
