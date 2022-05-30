@@ -20,7 +20,7 @@ const CommentsForm = (slug: any) => {
       return
     }
 
-    const commentObj = { name, email, comment, slug }
+    const commentObj = { name, email, comment, slug: slug.slug }
 
     submitComment(commentObj).then((res) => {
       setShowSuccessMessage(true)
