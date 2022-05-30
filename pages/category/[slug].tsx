@@ -8,9 +8,15 @@ const PostCategories = ({ posts }: any) => {
     <div className="container mx-auto mb-8 px-10">
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
         <div className="col-span-1 lg:col-span-8">
-          {posts.map((post: any, index: any) => (
-            <PostCard key={index} post={post.node} />
-          ))}
+          {posts.length > 0 ? (
+            posts.map((post: any, index: any) => (
+              <PostCard key={index} post={post.node} />
+            ))
+          ) : (
+            <div className="pb-18 rounded-lg bg-white p-8 shadow-lg">
+              There are no posts under this category.
+            </div>
+          )}
         </div>
         <div className="col-span-1 lg:col-span-4">
           <div className="relative top-8 lg:sticky">
