@@ -8,6 +8,7 @@ import {
   Categories,
   PostWidget,
   FeaturedPostCarousel,
+  Contact,
 } from '../components'
 
 const Home: NextPage = ({ posts }: any) => {
@@ -26,6 +27,7 @@ const Home: NextPage = ({ posts }: any) => {
         </div>
         <div className="col-span-1 lg:col-span-4">
           <div className="relative top-8 lg:sticky">
+            <Contact />
             <PostWidget />
             <Categories />
           </div>
