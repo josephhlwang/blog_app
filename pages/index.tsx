@@ -15,8 +15,8 @@ const Home: NextPage = ({ posts }: any) => {
   return (
     <div className="container mx-auto mb-8 px-10">
       <Head>
-        <title>Joseph's Blog</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Joseph Wang</title>
+        <link rel="shortcut icon" type="image/png" href="/image/favicon.png" />
       </Head>
       <FeaturedPostCarousel />
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
