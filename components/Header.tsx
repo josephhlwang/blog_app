@@ -28,11 +28,11 @@ const Header = () => {
               </span>
             </Link>
           ))}
-          <Link key="resume" href={`/resume`}>
+          <a href="/resume.pdf">
             <span className="mt-2 cursor-pointer align-middle font-semibold text-white md:float-right">
               Resume
             </span>
-          </Link>
+          </a>
         </div>
       </div>
     </div>
