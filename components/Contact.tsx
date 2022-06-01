@@ -33,16 +33,24 @@ const Contact = () => {
   ]
 
   return (
-    <div className="mb-8 rounded-lg bg-white p-8 pb-10 shadow-lg">
+    <div className="mb-8 rounded-lg bg-white p-8 pb-8 shadow-lg">
       <h3 className="mb-8 border-b pb-4 text-xl font-semibold">Socials</h3>
       <div className="grid grid-cols-4 place-items-center">
         {contactInfo.map((contact) => (
           <div key={contact.site} className="cursor-pointer">
             <a href={contact.link}>
-              <FontAwesomeIcon icon={contact.icon} className="fa-3x" />
+              <FontAwesomeIcon
+                icon={contact.icon}
+                className="fa-3x ease text-blue-400 transition duration-500 hover:text-blue-500"
+              />
             </a>
           </div>
         ))}
+      </div>
+      <div className="grid place-items-center pt-4">
+        <button className="rounded bg-blue-400 py-2 px-4 font-semibold text-white transition duration-500 hover:bg-blue-500">
+          <a href="mailto:josephhl.wang@gmail.com">Email me!</a>
+        </button>
       </div>
     </div>
   )
