@@ -1,5 +1,5 @@
 import React from 'react'
-import { PostCard, Categories } from '../../components'
+import { PostCard, Categories, Contact } from '../../components'
 
 import { getPostCategories, getCategories } from '../../services'
 
@@ -20,6 +20,7 @@ const PostCategories = ({ posts }: any) => {
         </div>
         <div className="col-span-1 lg:col-span-4">
           <div className="relative top-8 lg:sticky">
+            <Contact />
             <Categories />
           </div>
         </div>

@@ -8,6 +8,7 @@ import {
   Comments,
   CommentsForm,
   AdjacentPosts,
+  Contact,
 } from '../../components'
 
 const PostDetails = ({ post }: any) => {
@@ -23,6 +24,7 @@ const PostDetails = ({ post }: any) => {
         </div>
         <div className="col-span-1 lg:col-span-4">
           <div className="relative top-8 lg:sticky">
+            <Contact />
             <PostWidget
               slug={post.slug}
               categories={post.categories.map((category: any) => category.slug)}
