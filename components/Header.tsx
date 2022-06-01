@@ -16,7 +16,7 @@ const Header = () => {
         <div className="block text-center md:float-left">
           <Link href="/">
             <span className="cursor-pointer text-4xl font-bold text-white">
-              Joseph's Blog
+              Joseph Wang
             </span>
           </Link>
         </div>
@@ -28,6 +28,11 @@ const Header = () => {
               </span>
             </Link>
           ))}
+          <Link key="resume" href={`/resume`}>
+            <span className="mt-2 cursor-pointer align-middle font-semibold text-white md:float-right">
+              Resume
+            </span>
+          </Link>
         </div>
       </div>
     </div>
