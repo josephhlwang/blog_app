@@ -60,19 +60,19 @@ const CommentsForm = (slug: any) => {
         />
       </div>
       {error && (
-        <p className="text-xs text-red-500">All fields are mandatory</p>
+        <p className="text-xs text-red-700">All fields are mandatory.</p>
       )}
       <div className="mt-8">
         <button
           type="button"
           onClick={handlePostSubmission}
-          className="ease inline-block cursor-pointer rounded-full bg-pink-600 px-8 py-3 text-lg font-medium text-white transition duration-500 hover:bg-indigo-900"
+          className="ease inline-block cursor-pointer rounded-full bg-blue-800 px-8 py-3 text-lg font-medium text-white transition duration-500 hover:bg-indigo-800"
         >
           Post Comment
         </button>
         {showSuccessMessage && (
-          <span className="float-right mt-3 text-xl font-semibold text-green-500">
-            Comment submitted for review
+          <span className="float-right mt-3 text-xl font-semibold text-green-700">
+            Comment submitted for review.
           </span>
         )}
       </div>
