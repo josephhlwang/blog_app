@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { getPosts } from '../services'
 
 import {
+  About,
   PostCard,
   Categories,
   PostWidget,
@@ -21,6 +22,7 @@ const Home: NextPage = ({ posts }: any) => {
       <FeaturedPostCarousel />
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
         <div className="col-span-1 lg:col-span-8">
+          <About />
           {posts.map((post: any) => (
             <PostCard post={post.node} key={post.node.title} />
           ))}
