@@ -84,7 +84,7 @@ const FeaturedPostCarousel = () => {
       >
         {dataLoaded &&
           featuredPosts.map((post: any, index: any) => (
-            <FeaturedPostCard key={index} post={post.node} />
+            <FeaturedPostCard key={index} post={post} />
           ))}
       </Carousel>
     </div>
