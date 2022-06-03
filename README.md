@@ -26,7 +26,7 @@ npm install
 
 Create a GraphCMS account and add your `NEXT_PUBLIC_GRAPHCMS_ENDPOINT` and `GRAPHCMS_TOKEN` tokens in the `.env` file.
 
-### 4. Start the App
+### 4. Start App
 
 ```sh
 npm run dev
