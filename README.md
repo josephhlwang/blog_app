@@ -6,14 +6,7 @@ All content is dynamically hosted on **GraphCMS**.
 
 Please check out the live site deployed on **Vercel** below!
 
-<button name="button" style="background-color: #3b82f6;
-border: none;
-color: white;
-padding: 12px 22px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 15px;" onclick="https://blog-app-josephhlwang.vercel.app/">Live Site</button>
+[Live Site](https://blog-app-josephhlwang.vercel.app)
 
 ## Run It Locally
 
