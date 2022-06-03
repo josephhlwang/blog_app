@@ -1,23 +1,40 @@
-# Next.js + Tailwind CSS Example
+# Blog App
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Blog App is a personal blog and ePortfolio built with **NextJS, TailwindCSS and GraphQL**.
 
-## Deploy your own
+All content is dynamically hosted on **GraphCMS**.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Please check out the live site deployed on **Vercel** below!
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+<button name="button" style="background-color: #3b82f6;
+border: none;
+color: white;
+padding: 12px 22px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;" onclick="https://blog-app-josephhlwang.vercel.app/">Live Site</button>
 
-## How to use
+## Run It Locally
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+### 1. Clone Repo
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
+```sh
+git clone https://github.com/josephhlwang/blog_app.git
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### 2. Install Packages
+
+```sh
+npm install
+```
+
+### 3. Add Environment Variable
+
+Create a GraphCMS account and add your `NEXT_PUBLIC_GRAPHCMS_ENDPOINT` and `GRAPHCMS_TOKEN` tokens in the `.env` file.
+
+### 4. Starting the App
+
+```sh
+npm run dev
+```
