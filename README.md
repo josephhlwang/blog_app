@@ -1,5 +1,7 @@
 # Blog App
 
+![Screenshot](screenshot.png)
+
 Blog App is a personal blog and ePortfolio built with **NextJS, TailwindCSS and GraphQL**.
 
 All content is dynamically hosted on **GraphCMS**.
