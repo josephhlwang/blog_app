@@ -22,11 +22,11 @@ git clone https://github.com/josephhlwang/blog_app.git
 npm install
 ```
 
-### 3. Add Environment Variable
+### 3. Add Environment Variables
 
 Create a GraphCMS account and add your `NEXT_PUBLIC_GRAPHCMS_ENDPOINT` and `GRAPHCMS_TOKEN` tokens in the `.env` file.
 
-### 4. Starting the App
+### 4. Start the App
 
 ```sh
 npm run dev
